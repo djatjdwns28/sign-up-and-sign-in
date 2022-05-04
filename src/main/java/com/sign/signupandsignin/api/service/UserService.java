@@ -23,7 +23,7 @@ public class UserService {
             .password(userDto.getPassword())
             .age(userDto.getAge())
             .sex(userDto.getSex())
-            .phoneNumber(userDto.getPhoneNumber())
+            .phoneNum(userDto.getPhoneNum())
             .address(userDto.getAddress())
             .build();
         return userMapper.createUser(userEntity);

@@ -24,13 +24,13 @@ public class UserDto {
     private String password;
 
     @ApiModelProperty(example = "유저 나이")
-    private String age;
+    private int age;
 
     @ApiModelProperty(example = "성별")
     private String sex;
 
     @ApiModelProperty(example = "휴대폰 번호")
-    private String phoneNumber;
+    private String phoneNum;
 
     @ApiModelProperty(example = "주소")
     private String address;

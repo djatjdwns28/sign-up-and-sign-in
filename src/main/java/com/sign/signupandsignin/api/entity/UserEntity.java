@@ -17,11 +17,11 @@ public class UserEntity {
 
     private String password;
 
-    private String age;
+    private int  age;
 
     private String sex;
 
-    private String phoneNumber;
+    private String phoneNum;
 
     private String address;
 }
