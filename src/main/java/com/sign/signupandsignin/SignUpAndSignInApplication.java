@@ -8,7 +8,7 @@ public class SignUpAndSignInApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SignUpAndSignInApplication.class, args);
-		System.out.println("Helldo worl");
+		System.out.println("Helld l");
 	}
 
 }
