@@ -21,10 +21,14 @@ public class PasswordTest {
     void passwordEncode(){
         String rawPassword = "dhdhdh123";
 
+        //비밀번호 암호화
         String encodePassword = passwordEncoder.encode(rawPassword);
 
         assertAll(
+            //평문 패스워드와 암호화 패스워드가 서로 다른게 맞는지 -> assertNotEquals()
             () -> assertNotEquals(rawPassword, encodePassword),
+            // matches -> 두 문자열을 비교해주는 역할
+            // matches로 두 암호를 비교했을데 값이 같은 패스워드라는걸 반환하는지 -> assertTrue
             () -> assertTrue(passwordEncoder.matches(rawPassword, encodePassword))
         );
     }
